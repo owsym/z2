@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html style="background-color:silver;">
+<head>
+<title>ZAKAT Calculetor</title>
+</head>
+<body style="text-align:center ;">
+  <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">CHEK YOUR ZAKAT</h1>
+  <h3>YOUR AMOUNT</h3>
+  <input type="number" id="totalAmount" placeholder="Enter your Amount"><br>
+  <h3>YOUR GOLD</h3>
+  <input type="number" id="totalGold" placeholder="Your Gold Value"><br>
+  <h3>YOUR SILVER</h3>
+  <input type="number" id="totalSilver" placeholder="Your Silver Value"><br>
+  <button onclick="
+  let totalAmount = document.getElementById('totalAmount').value;
+  let totalAmountd = totalAmount/40;
+
+  let totalGold = document.getElementById('totalGold').value;
+  let totalg = totalGold*120000/40;
+
+  let totalSilver = document.getElementById('totalSilver').value;
+  let totals = totalSilver*1500/40;
+
+  let totalZakat = totalg + totals + totalAmountd;
+
+  document.getElementById('result').innerText = totalZakat;
+  
+   " >Click Here
+
+  </button>  
+  <h2 id="result">0</h2>
+</body>
+</html>
